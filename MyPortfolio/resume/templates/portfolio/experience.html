@@ -1,0 +1,62 @@
+{% extends 'portfolio/home.html' %}
+{% load static %}
+
+{% block title %}
+
+Experience
+
+{% endblock %}
+
+{% block body %}
+
+<div class="experience-section">
+    <!-- Projects Section -->
+    <div class="projects-section">
+      <h2>Projects</h2>
+
+      <div class="project-card" id="project1">
+        <span>
+            <img src="{% static 'img/auction.png' %}" alt="eCommerce Platform">
+        </span>
+       <span>
+        <h3>eCommerce Platform</h3>
+        <p>This project showcases an online shopping platform built using Python, Django, and REST APIs.</p>
+        <p><strong>Tech Stack:</strong> Python, Django, HTML, CSS, JavaScript</p>
+        <span>GitHub: <a href="https://github.com/CaraCara96/ecommerce" target="_blank" class="project-links">View Project</a></span>
+    
+       </span>
+       </div>
+      <div class="project-card" id="project2">
+        <span>
+            <img src="{% static 'img/social.png' %}" alt="eCommerce Platform">
+        </span>
+      <span>
+        <h3>Social Network</h3>
+        <p>Developed a social media platform as part of Harvard CS50W, focusing on user interaction and engagement.</p>
+        <p><strong>Tech Stack:</strong> Python, Django, HTML, CSS, JavaScript</p>
+        <span>GitHub: <a href="https://github.com/CaraCara96/social-network" target="_blank" class="project-links">View Project</a></span>
+     
+      </span>
+    </div>
+    </div>
+  
+   
+    <div class="experience-timeline2">
+      <h2>Work Experience</h2>
+      <div class="timeline-item2">
+        <h4>IT Lead, Education Hub</h4>
+        <span>2023 - Present</span>
+        <p>Revamping the platform using Django REST, enhancing functionality, and managing back-end operations.</p>
+      </div>
+      <div class="timeline-item2">
+        <h4>Administration and Procurement, Perfect Structure</h4>
+        <span>2019 - Present</span>
+        <p>Managed office operations, invoicing, and procurement. Developed strong organizational skills.</p>
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+{% endblock %}

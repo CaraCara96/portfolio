@@ -1,0 +1,206 @@
+{% extends 'portfolio/home.html' %}
+{% load static %}
+
+
+{% block title %}
+Beka C 
+{% endblock %}
+
+{% block body %}
+
+<div class="hero">
+    <div class="hero-lt">
+        <h1>
+            Hi, <span> I'm Courage</span>
+        </h1>
+        <h4>
+            I'm a <span>
+                Software Engineer
+            </span>
+        </h4>
+        <p class="hero-content">
+            I am a passionate software engineer with a first-class degree in Computer Science, specializing in
+             Django and building innovative web applications that solve real-world problems through clean, efficient code and user-focused design. 
+            </p>
+            <div class="my-cv">
+                <button class="btn btn-outline-success"> <i class="fas fa-file-alt"></i> Download CV</button>
+            </div>
+        <span class="hero-icons">
+            <a href="tel:+27736327222">
+            <button class="btn btn-outline-info"><i class="fas fa-phone"></i></button>
+            </a>
+             &nbsp;
+             <a href="mailto:courage.b.cb@gmail.com">
+            <button class="btn btn-info"><i class="fas fa-envelope"></i></button>
+            </a>
+            &nbsp;
+            <a href="https://github.com/CaraCara96" target="_blank">
+            <button class="btn btn-outline-info"><i class="fab fa-github"></i></button>
+            </a>
+
+            &nbsp;
+            <a href="https://www.linkedin.com/in/courage-beka-2308a1130/" target="_blank">
+            <button class="btn btn-info"><i class="fab fa-linkedin"></i></button>
+            </a>
+           
+
+            
+        </span>
+    </div>
+    <div class="hero-rt">
+        <span class="hero-img-wrapper">
+            <img src="{% static 'img/aaa.png' %}" alt="hero image" class="hero-img">
+        </span>
+    </div>
+</div>
+
+<div class="about-section">
+    <div class="about-heading">
+        <h4>A brief</h4>
+        <h1>
+            Overview
+        </h1>
+    </div>
+
+    <div class="about-mid">
+        <div class="about-mid-sec">
+            <div class="about-mid-lt">
+                <h1>
+                    <i class="fas fa-user"></i>
+                </h1>
+                <h2>
+                    About Me
+                </h2>
+            </div>
+            <div class="about-mid-rt">
+                <h6>
+                    I'm a first-class honors (Cum Laude) Computer Science graduate with hands-on experience in software development and project management. I'm eager to grow as a software engineer. </h6>
+            </div>
+            <div class="about-mid-lt">
+                <h1>
+                    <i class="fas fa-code"></i>
+
+                </h1>
+                <h2>
+                    Software Development
+                </h2>
+            </div>
+            <div class="about-mid-rt">
+                <h6>
+                    Proficient in Python, Django (REST Framework), and JavaScript. I have developed websites and applications, demonstrating my ability to build efficient and scalable solutions. </h6>
+            </div>
+            <div class="about-mid-lt">
+                <h1>
+                    <i class="fas fa-briefcase"></i>
+                </h1>
+                <h2>
+                    Co-Founder
+                </h2>
+            </div>
+            <div class="about-mid-rt">
+                <h6>
+                    As a co-founder of Education Hub, I manage the company's website and ensure smooth back-end operations, enhancing user experience. </div>
+            <div class="about-mid-lt">
+                <h1>
+                    <i class="fas fa-laptop"></i>
+                </h1>
+                <h2>
+                    Freelance Design
+                </h2>
+            </div>
+            <div class="about-mid-rt">
+                <h6>
+                    I create visually appealing promotional materials as a freelance designer, showcasing my creativity and client-focused approach. </h6>
+            </div>
+            <div class="about-mid-lt">
+                <h1>
+                    <i class="fas fa-compass"></i>
+                </h1>
+                <h2>
+                    Explore
+                </h2>
+            </div>
+            <div class="about-mid-rt">
+                <h6>
+                    I'm passionate about exploring new technologies and continuous learning, keeping myself updated with industry trends.
+                    Explore my projects, skills, and experiences, and feel free to reach out if you're interested in collaborating or learning more about my work!
+                </h6>
+                    <div class="my-cv">
+                        <button class="btn btn-outline-danger"> <i class="fas fa-file-alt"></i> Download CV</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="skills-section">
+    <div class="skills-heading">
+        <h4>Frameworks and</h4>
+        <h1>Languages</h1>
+    </div>
+    <div class="skills-list">
+        <div class="skill">
+            <h3>
+                <i class="fab fa-html5"></i>
+
+            </h3>
+            <h4>
+                Html
+            </h4>
+        </div>
+        <div class="skill">
+            <h3>
+                <i class="fab fa-js"></i>
+
+
+
+            </h3>
+            <h4>
+                js
+            </h4>
+        </div>
+        <div class="skill">
+            <h3>
+                <i class="fab fa-react"></i>
+
+
+            </h3>
+            <h4>
+                React
+            </h4>
+        </div>
+        <div class="skill">
+            <h3>
+                <i class="fab fa-python"></i>
+
+
+            </h3>
+            <h4>
+                Python
+            </h4>
+        </div>
+        <div class="skill">
+            <h3>
+                <i class="fab fa-css3-alt"></i>
+
+
+            </h3>
+            <h4>
+               Css
+            </h4>
+        </div>
+        <div class="skill">
+            <h3>
+                <i class="fab fa-python"></i>
+
+
+            </h3>
+            <h4>
+                Django
+            </h4>
+        </div>
+    
+    </div>
+</div>
+
+{% endblock %}

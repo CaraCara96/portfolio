@@ -5,11 +5,238 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <title>Document</title>
+
+    <title>{% block title %} Courage Beka {% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous"> -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
 </head>
-<body>
-    <h1>
-        Mine
-    </h1>
+<body class="main-body">
+
+    <div class="nbr">
+        <div class="nav-section-1">
+            <h3>Beka C</h3>
+        </div>
+        <div class="nav-section-2">
+            <ul class="nav-items-ul">
+                <li class="nav-item-a">
+                   <a href="{% url 'home' %}">Home </a> 
+                </li>
+                <li class="nav-item-a">
+                    <a href="{% url 'education' %}">Education</a>
+                </li>
+                <li class="nav-item-a">
+                    <a href="{% url 'experience' %}">Experience</a>
+                </li>
+              
+                <li class="nav-item-a">
+                    <a href="{% url 'contact' %}">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="nav-section-3">
+            <div class="cv-btn">
+                <button class="btn btn-outline-info">
+                    Download CV
+                </button>
+            </div>
+        </div>
+        <div class="nav-drop-icon" id="mobile-menu">
+            <h3 id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </h3>
+        </div>
+
+        <div class="nav-drop" id="mob-menu">
+           
+                <div class="nav-items-uld">
+                    <div class="nav-item-ad">
+                       <a href="#">Home </a> 
+                    </div>
+                  
+                    <li class="nav-item-ad">
+                        <a href="#">Education</a>
+                    </li>
+                    <li class="nav-item-ad">
+                        <a href="#">Experience</a>
+                    </li>
+                   
+                    <li class="nav-item-ad">
+                        <a href="#">Contact</a>
+                    </li>
+                    <li class="nav-item-ad" id="cv-btn">
+                        <button class="btn btn-outline-info">
+                            Download CV
+                        </button>
+                    </li>
+                </div>
+          
+        </div>
+
+    </div>
+
+   <div class="main-container">
+   
+   
+    {% block body %}
+
+    {% endblock %}
+   </div>
+    <div class="footer">
+       <span class="ft-bd">
+
+       </span>
+        <div class="footer-sec-1">
+            <div class="footer-head-lf">
+               <h4>
+                Get connected on social media
+               </h4> 
+            </div>
+            <div class="footer-head-rt">
+                <!-- Facebook -->
+<a href="https://www.facebook.com" target="_blank">
+    <i class="fab fa-facebook"></i>
+  </a>
+  
+  <!-- Twitter -->
+  <a href="https://twitter.com" target="_blank">
+    <i class="fab fa-twitter"></i>
+  </a>
+  
+  <!-- TikTok -->
+  <a href="https://www.tiktok.com" target="_blank">
+    <i class="fab fa-tiktok"></i>
+  </a>
+  
+  <!-- GitHub -->
+  <a href="https://github.com" target="_blank">
+    <i class="fab fa-github"></i>
+  </a>
+  
+  <!-- LinkedIn -->
+  <a href="https://linkedin.com" target="_blank">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  
+  <!-- WhatsApp -->
+  <a href="https://wa.me/your-phone-number" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  
+
+  
+  <!-- YouTube -->
+  <a href="https://www.youtube.com" target="_blank">
+    <i class="fab fa-youtube"></i>
+  </a>
+            </div>
+        </div>
+        <div class="footer-sec-2">
+            <div class="ft-1">
+                <h3>
+                    Hi There,
+                </h3>
+                <p>
+                    I am a first-class honors (Cum Laude) <span>Computer Science</span> graduate at the <span>University of Venda</span> in Limpopo South Africa with hands-on experience in <span>Software Development</span>
+                    and <span>Project Management</span>.
+                </p>
+               
+               
+            </div>
+            <div class="ft-2">
+                <span class="ft-hd">
+                    <h4>
+                        Skills
+                    </h4>
+                </span>
+                <span class="ft-links">
+                    <div class="sk">
+                        Html
+                    </div>
+                    <div class="sk">
+                        Css
+                    </div>
+                    <div class="sk">
+                        Javascript
+                    </div>
+                    <div class="sk">
+                        React
+                    </div>
+                    <div class="sk">
+                        Python
+                    </div>
+                    <div class="sk">
+                        Django
+                    </div>
+                </span>
+            </div>
+            <div class="ft-3">
+                <span class="ft-hd">
+                    <h4>
+                        Links
+                    </h4>
+                </span>
+                <span class="ft-links">
+                    <div class="nav-items-ft">
+                        <div class="nav-item-adt">
+                           <a href="#">Home </a> 
+                        </div>
+                      
+                        <div class="nav-item-adt">
+                            <a href="#">Education</a>
+                        </div>
+                        <div class="nav-item-adt">
+                            <a href="#">Experience</a>
+                        </div>
+                      
+                        <div class="nav-item-adt">
+                            <a href="#">Contact</a>
+                        </div>
+                        <!-- <div class="nav-item-ad" id="cv-btn">
+                            <button class="btn btn-outline-success">
+                                Download CV
+                            </button>
+                        </div> -->
+                    </div>
+                </span>
+            </div>
+            <div class="ft-4">
+                <span class="ft-hd">
+                    <h4>
+                        Contact
+                    </h4>
+                </span>
+                <span class="ft-links-c">
+                    <div class="cft-t">
+                        Welcome to my site. As a passionate software engineer, I’m excited to collaborate and bring innovative solutions to your projects or company. Let’s connect!</div>
+                    <div class="cft-m">
+                        <i class="fas fa-map-marker-alt"></i> &nbsp; Polokwane, South Africa
+                    </div>
+                    <div class="cft-b">
+                        <button type="button" class="btn btn-outline-primary "><i class="fas fa-envelope"></i></button>&nbsp; &nbsp; 
+                        <button type="button" class="btn btn-success"><i class="fas fa-phone"></i>
+                        </button>
+                    </div>
+                    
+                   
+                </span>
+            </div>
+        </div>
+        <div class="footer-sec-3">
+            <h6>
+                <p>&copy; 2024 Courage Beka. All Rights Reserved.</p>
+            </h6>
+        </div>
+
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </body>
 </html>
