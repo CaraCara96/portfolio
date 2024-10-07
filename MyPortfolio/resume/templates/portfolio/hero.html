@@ -8,8 +8,9 @@ Beka C
 
 {% block body %}
 
-<div class="hero">
-    <div class="hero-lt">
+<div class="hero" 
+>
+    <div class="hero-lt"  data-aos="fade-right" >
         <h1>
             Hi, <span> I'm Courage</span>
         </h1>
@@ -18,7 +19,7 @@ Beka C
                 Software Engineer
             </span>
         </h4>
-        <p class="hero-content">
+        <p class="hero-content" >
             I am a passionate software engineer with a first-class degree in Computer Science, specializing in
              Django and building innovative web applications that solve real-world problems through clean, efficient code and user-focused design. 
             </p>
@@ -47,14 +48,14 @@ Beka C
             
         </span>
     </div>
-    <div class="hero-rt">
+    <div class="hero-rt" data-aos="fade-left" >
         <span class="hero-img-wrapper">
             <img src="{% static 'img/aaa.png' %}" alt="hero image" class="hero-img">
         </span>
     </div>
 </div>
 
-<div class="about-section">
+<div class="about-section" data-aos="fade-up" >
     <div class="about-heading">
         <h4>A brief</h4>
         <h1>
@@ -126,14 +127,14 @@ Beka C
                     Explore my projects, skills, and experiences, and feel free to reach out if you're interested in collaborating or learning more about my work!
                 </h6>
                     <div class="my-cv">
-                        <button class="btn btn-outline-danger"> <i class="fas fa-file-alt"></i> Download CV</button>
+                        <button class="btn btn-outline-success"> <i class="fas fa-file-alt"></i> Download CV</button>
                     </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="skills-section">
+<div class="skills-section" data-aos="fade-up">
     <div class="skills-heading">
         <h4>Frameworks and</h4>
         <h1>Languages</h1>
@@ -156,7 +157,7 @@ Beka C
 
             </h3>
             <h4>
-                js
+                Js
             </h4>
         </div>
         <div class="skill">
@@ -197,6 +198,16 @@ Beka C
             </h3>
             <h4>
                 Django
+            </h4>
+        </div>
+        <div class="skill">
+            <h3>
+                <i class="fab fa-github"></i>
+
+
+            </h3>
+            <h4>
+                Git
             </h4>
         </div>
     

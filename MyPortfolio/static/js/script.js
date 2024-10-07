@@ -17,4 +17,17 @@ document.addEventListener("DOMContentLoaded", function(){
             }
         }, 200);
     })
+
+    const navLinks = document.querySelectorAll('.nav-link-item');
+
+    const currentUrl = window.location.href;
+
+    navLinks.forEach(link =>{
+        if(currentUrl.includes(link.href)){
+            navLinks.forEach(item => item.classList.remove('active-link'))
+            link.classList.add('active-link')
+        }
+    });
+  
+
 })

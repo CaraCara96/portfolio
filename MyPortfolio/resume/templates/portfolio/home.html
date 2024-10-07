@@ -25,17 +25,17 @@
         <div class="nav-section-2">
             <ul class="nav-items-ul">
                 <li class="nav-item-a">
-                   <a href="{% url 'home' %}">Home </a> 
+                   <a href="{% url 'home' %}" class="nav-link-item">Home </a> 
                 </li>
                 <li class="nav-item-a">
-                    <a href="{% url 'education' %}">Education</a>
+                    <a href="{% url 'education' %}" class="nav-link-item">Education</a>
                 </li>
                 <li class="nav-item-a">
-                    <a href="{% url 'experience' %}">Experience</a>
+                    <a href="{% url 'experience' %}" class="nav-link-item">Experience</a>
                 </li>
               
                 <li class="nav-item-a">
-                    <a href="{% url 'contact' %}">Contact</a>
+                    <a href="{% url 'contact' %}" class="nav-link-item">Contact</a>
                 </li>
 
             </ul>
@@ -57,18 +57,18 @@
            
                 <div class="nav-items-uld">
                     <div class="nav-item-ad">
-                       <a href="#">Home </a> 
+                        <a href="{% url 'home' %}" class="nav-link-item-t">Home </a> 
                     </div>
                   
                     <li class="nav-item-ad">
-                        <a href="#">Education</a>
+                        <a href="{% url 'education' %}" class="nav-link-item-t">Education</a>
                     </li>
                     <li class="nav-item-ad">
-                        <a href="#">Experience</a>
+                        <a href="{% url 'experience' %}" class="nav-link-item-t">Experience</a>
                     </li>
                    
                     <li class="nav-item-ad">
-                        <a href="#">Contact</a>
+                        <a href="{% url 'contact' %}" class="nav-link-item-t">Contact</a>
                     </li>
                     <li class="nav-item-ad" id="cv-btn">
                         <button class="btn btn-outline-info">
@@ -88,7 +88,7 @@
 
     {% endblock %}
    </div>
-    <div class="footer">
+    <div class="footer" data-aos="fade-up">
        <span class="ft-bd">
 
        </span>
@@ -185,18 +185,18 @@
                 <span class="ft-links">
                     <div class="nav-items-ft">
                         <div class="nav-item-adt">
-                           <a href="#">Home </a> 
+                            <a href="{% url 'home' %}">Home </a> 
                         </div>
                       
                         <div class="nav-item-adt">
-                            <a href="#">Education</a>
+                            <a href="{% url 'education' %}">Education</a>
                         </div>
                         <div class="nav-item-adt">
-                            <a href="#">Experience</a>
+                            <a href="{% url 'experience' %}">Experience</a>
                         </div>
                       
                         <div class="nav-item-adt">
-                            <a href="#">Contact</a>
+                            <a href="{% url 'contact' %}">Contact</a>
                         </div>
                         <!-- <div class="nav-item-ad" id="cv-btn">
                             <button class="btn btn-outline-success">
@@ -238,5 +238,11 @@
 
     <script src="{% static 'js/script.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+          duration: 2000, // Animation duration (in ms)
+          once: false, // Whether animation should happen only once or every time you scroll up/down
+        });
+      </script>
 </body>
 </html>
