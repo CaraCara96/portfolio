@@ -10,26 +10,35 @@ Contact
 {% block body %}
 
 <div class="contact-page">
+ 
     <div class="contact-form-container" data-aos="fade-right">
-      <form class="contact-form">
+      <form class="contact-form" method="POST" novalidate>
+        {% csrf_token %}
         <h2>Contact Me</h2>
         <div class="form-group">
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
+          <input type="text" id="name" name="name" required placeholder="John Doe" maxlength="60">
         </div>
         
         <div class="form-group">
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email" required placeholder="email@mail.com" max="100">
         </div>
         
         <div class="form-group">
           <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
+          <textarea id="message" name="message" rows="5" required maxlength="1000" placeholder="Please type your message, i will get back to you as soon as possible"></textarea>
         </div>
         
-        <button type="submit">Send Message</button>
+        <button type="submit" id="send-message">Send Message</button>
+
+        <div id="message-response">
+            <span>
+                <h5>Message Delivered!</h5>
+            </span>
+        </div>
       </form>
+   
     </div>
   
     <div class="contact-info-container" data-aos="fade-left">
@@ -42,5 +51,7 @@ Contact
       </div>
     </div>
   </div>
+
+ 
   
 {% endblock %}

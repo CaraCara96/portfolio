@@ -13,31 +13,24 @@ Experience
    
     <div class="projects-section">
       <h2>Projects</h2>
-
+        {% for project in projects %}
       <div class="project-card" id="project1" data-aos="fade-up">
         <span>
-            <img src="{% static 'img/auction.png' %}" alt="eCommerce Platform">
+            <img src="{{project.image.url}}" alt="{{project.title}}">
         </span>
        <span>
-        <h3>eCommerce Platform</h3>
-        <p>This project showcases an online shopping platform built using Python, Django, and REST APIs.</p>
-        <p><strong>Tech Stack:</strong> Python, Django, HTML, CSS, JavaScript</p>
-        <span>GitHub: <a href="https://github.com/CaraCara96/ecommerce" target="_blank" class="project-links">View Project</a></span>
+        <h3>{{project.title}}</h3>
+        <p>
+            {{project.description}}
+        </p>
+        <p><strong>Tech Stack:</strong> {{project.tech_stack}}</p>
+        <span>GitHub: <a href="{{project.github_link}}" target="_blank" class="project-links">View Project</a></span>
     
        </span>
        </div>
-      <div class="project-card" id="project2" data-aos="fade-up">
-        <span>
-            <img src="{% static 'img/social.png' %}" alt="eCommerce Platform">
-        </span>
-      <span>
-        <h3>Social Network</h3>
-        <p>Developed a social media platform as part of Harvard CS50W, focusing on user interaction and engagement.</p>
-        <p><strong>Tech Stack:</strong> Python, Django, HTML, CSS, JavaScript</p>
-        <span>GitHub: <a href="https://github.com/CaraCara96/social-network" target="_blank" class="project-links">View Project</a></span>
+
+       {% endfor %}
      
-      </span>
-    </div>
     </div>
   
    

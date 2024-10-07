@@ -28,6 +28,22 @@ document.addEventListener("DOMContentLoaded", function(){
             link.classList.add('active-link')
         }
     });
-  
+     
+    const sendMessage = document.querySelector('.contact-form'); // Targeting the form
+    const responseDiv = document.getElementById('message-response');
 
+    sendMessage.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Show the response message
+        responseDiv.style.display = 'block';
+
+        // Hide the message after 3 seconds
+        setTimeout(function() {
+            responseDiv.style.display = 'none';
+            sendMessage.submit();
+         
+        }, 3000);
+       
+    });
 })
